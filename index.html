@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fin">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -19,7 +19,7 @@
             <div class="col-sm-3 logo"><img class="" src="./img/Coronas_logo-8.png" alt=""></div>
       </header>
       <!-- Bootstrap Responsiivinen menu -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light position-relative">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light position-relative mb-3">
         <!-- Mobiili menu hampurilais ikoni -->
         <button class="navbar-toggler pull-left" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -45,19 +45,127 @@
           </ul>
         </div>
         <!-- Some ikonit -->
-        <div class="float-right position-absolute some">
+        <div class="float-lg-right position-absolute some">
           <a href="#"><img src="./img/facebook-dreamstale25.png" alt=""></a>
           <a href="#"><img src="./img/instagram-dreamstale43.png" alt=""></a>
           <a href="#"><img src="./img/twitter-dreamstale71.png" alt=""></a>
         </div>
       </nav>
-    <h1>Hello, world!</h1><br>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dignissimos alias quae dolores veritatis illo natus ipsa. Nemo delectus voluptas cumque ratione, soluta enim molestias nobis doloremque perspiciatis modi labore.</p>
+
+
+      <!-- Pää sivun container elementti-->
+<div class="container-fluid position-relative main">
+      <!--Artikkeli elementti-->
+     <article class="col-xl-9 float-left mb-3">
+       <!--Wrapper artikkelin teksti ja kuva elementeille-->
+        <div class="row">
+          <!--Artikkelin teksti-->
+            <div class="col-lg-8">
+                <h1>Ajankohtaista</h1><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Fuga dignissimos alias quae dolores veritatis illo natus ipsa.
+                   Nemo delectus voluptas cumque ratione, soluta enim molestias 
+                   nobis doloremque perspiciatis modi labore. Lorem ipsum dolor 
+                   sit amet consectetur adipisicing elit. <br> 
+                   <br> Quo inventore rerum quia optio debitis, reiciendis unde 
+                   molestiae fuga accusamus minus quas quasi. Nihil accusamus 
+                   adipisci nulla reiciendis est delectus iste!</p>
+                   <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Fuga dignissimos alias quae dolores veritatis illo natus ipsa.
+                     Nemo delectus voluptas cumque ratione, soluta enim molestias 
+                     nobis doloremque perspiciatis modi labore. Lorem ipsum dolor 
+                     sit amet consectetur adipisicing elit. <br> 
+                     <br> Quo inventore rerum quia optio debitis, reiciendis unde 
+                     molestiae fuga accusamus minus quas quasi. Nihil accusamus 
+                     adipisci nulla reiciendis est delectus iste!</p>
+            </div>
+          <!--Artikkelin Kuva-->
+            <div class="col-lg-4 article-img">
+                <img class="d-block" src="./img/Corona-Klubi-Badge Mockup.jpg" alt="">
+            </div>
+        </div><!--<Row päättyy>-->
+      </article>
+
+
+      <!--Sidebar Wrapper elementti-->
+    <aside class="col-xl-3 float-lg-right align-end sidebar">
+      <!--Viimeisimmät artikkelit laatikko-->
+        <div class="boxi">
+          <!--Otsikko elementti-->
+              <span class="sb-otsikko"><h3>Viimeisimmät artikkelit</h3></span>
+              <!--Lista viimeisistä artikkeleista. Tehty bootstrap list-group toiminnolla-->
+              <ul class="list-group text-center resent-articles">
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">list group item</a> 
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">list group item</a>
+              </ul>
+        </div> <!--Päällimmäinen laatikko päättyy-->
+
+        <!--Verkkokauppa laatikko-->
+        <div class="boxi">
+          <!--Otsikko elementti-->
+            <span class="sb-otsikko"><h3>Osta verkkokaupasta</h3></span>
+            <!--Tuotekuva-->
+            <div class="shop-img d-inline-flex justify-content-center align-items-start mt-n3"><img class="d-inline-block img-fluid" src="./img/iLoveBeer.png" alt="">
+              <!--Siirry verkkokauppaan, bootsrap button-->
+              <a class="position-absolute" href="#"><button type="button" class="btn btn-primary btn-lg">Siirry verkkokauppaan</button></a>
+            </div>
+        </div><!--Verkkokauppa laatikko päättyy-->
+
+        <!--Yhteystiedot laatikko-->
+        <div class="boxi">
+            <!--Otsikko elementti-->
+            <span class="sb-otsikko"><h3>Ota yhteyttä</h3></span>
+            <!--Osoitelaatikko-->
+            <div class="osoite">
+                <p><strong>Corona Brew Oy</strong></p>
+                <p>PL 662<br>01177 CORONA<br>coronaklubi@email.com</p>
+            </div>
+        </div><!--Yhteystiedot laatikko päättyy-->
+        
+    </aside><!--Sidebar elementti päättyy-->
+      
+      <!--Klubi-banneri osio-->
+      <section class="col-xl-9 float-left mb-3 banneri">
+        <!--Wrapperi banneri elementin teksti ja nappielementeille-->
+        <div class="row klubi-mainos py-2">
+          <!--Bannerin tekstiosio-->
+          <div class="col-lg-8">
+              <h2>Liity Klubiin!</h2><br>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Fuga dignissimos alias quae dolores veritatis illo natus ipsa.
+                 Nemo delectus voluptas cumque ratione, soluta enim molestias 
+                 nobis doloremque perspiciatis modi labore. Lorem ipsum dolor 
+                 sit amet consectetur adipisicing elit. <br> 
+                 <br> Quo inventore rerum quia optio debitis, reiciendis unde 
+                 molestiae fuga accusamus minus quas quasi. Nihil accusamus 
+                 adipisci nulla reiciendis est delectus iste!</p>
+          </div>
+          <!--Elementti liity klubiin napille-->
+          <div class="col-lg-4 d-flex liity-painike">
+            <a href="#"><button type="button" class="btn btn-primary btn-lg">Liity Klubiin</button></a>
+          </div>
+      </div><!--<Row päättyy>-->
+      </section><!--Banneri section päättyy-->
+    
+</div>  <!-- Pää sivun container elementti päättyy-->
+
+
+<!-- Footer elementti-->
+<footer class="footer d-flex clearfix mt-3">
+  <div class="">
+  <p>Copyright JVJT 2020</p>
+</div>
+</footer> 
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
   </body>
 </html>
